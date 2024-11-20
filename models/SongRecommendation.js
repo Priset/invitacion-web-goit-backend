@@ -6,7 +6,7 @@ const songRecommendationSchema = new mongoose.Schema({
         required: true,
         maxlength: 100,
     },
-    title: {
+    song: {
         type: String,
         required: true,
         maxlength: 100,
