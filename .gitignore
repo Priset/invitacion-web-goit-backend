@@ -54,3 +54,4 @@ dump/
 # PM2 (Process Manager) specific
 pm2-logs/
 pids/
+.vercel
