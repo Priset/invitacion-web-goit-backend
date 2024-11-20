@@ -8,14 +8,11 @@ const songRecommendationRoutes = require('./routes/song-recommendations');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
 app.use(cors());
-app.use(express.json()); // Para procesar JSON
+app.use(express.json());
 
-// Rutas
 app.use('/api/song-recommendations', songRecommendationRoutes);
 
-// Conexión a MongoDB
 mongoose
     .connect(process.env.MONGO_URI)
     .then(() => console.log('Conexión a MongoDB exitosa'))
